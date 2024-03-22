@@ -87,11 +87,13 @@ __metadata:
     "@nomiclabs/hardhat-etherscan": ^3.1.2
     "@nomiclabs/hardhat-waffle": ^2.0.3
     "@openzeppelin/contracts": ^4.8.1
+    "@sablier/v2-core": ^1.1.2
     abdk-libraries-solidity: ^3.2.0
     chai: ^4.3.6
     ethereum-waffle: ^3.4.4
     ethereumjs-util: ^7.0.4
     ethers: ^5.7.0
+    forge-std: ^1.1.2
     hardhat: ^2.10.2
     prettier: ^2.8.4
     prettier-plugin-solidity: ^1.0.0-beta.24
@@ -1075,6 +1077,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@openzeppelin/contracts@npm:4.9.2":
+  version: 4.9.2
+  resolution: "@openzeppelin/contracts@npm:4.9.2"
+  checksum: 0538b18fe222e5414a5a539c240b155e0bef2a23c5182fb8e137d71a0c390fe899160f2d55701f75b127f54cc61aee4375370acc832475f19829368ac65c1fc6
+  languageName: node
+  linkType: hard
+
 "@openzeppelin/contracts@npm:^4.8.1":
   version: 4.9.5
   resolution: "@openzeppelin/contracts@npm:4.9.5"
@@ -1086,6 +1095,13 @@ __metadata:
   version: 0.11.0
   resolution: "@pkgjs/parseargs@npm:0.11.0"
   checksum: 6ad6a00fc4f2f2cfc6bff76fb1d88b8ee20bc0601e18ebb01b6d4be583733a860239a521a7fbca73b612e66705078809483549d2b18f370eb346c5155c8e4a0f
+  languageName: node
+  linkType: hard
+
+"@prb/math@npm:4.0.2":
+  version: 4.0.2
+  resolution: "@prb/math@npm:4.0.2"
+  checksum: a55126d03c8a9be8d5b9a0274de40b80018b3bdf877e249f891e04c555983b30fa948e42b9846594387bcc271967368e85f2434fd39de1bac17bf3bf7d3eb0ab
   languageName: node
   linkType: hard
 
@@ -1131,6 +1147,18 @@ __metadata:
     path-browserify: ^1.0.0
     url: ^0.11.0
   checksum: 690cf550fd0608e849fcb9c20a08479ce405173f8d0b09141a5bd140c4ae7c887ebcb0532c4ca64b5c1d3039fe77cc94172b7afb51c1a8fe7722475c429e6944
+  languageName: node
+  linkType: hard
+
+"@sablier/v2-core@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "@sablier/v2-core@npm:1.1.2"
+  dependencies:
+    "@openzeppelin/contracts": 4.9.2
+    "@prb/math": 4.0.2
+  peerDependencies:
+    "@prb/math": 4.0.x
+  checksum: 3d9160e1bbf070d4d8a501bf8bbace72322ef5830db005fa0956ed741beed4ef429d464f0094c1dd4694505bcde173482811f8bab617ea605cf37164eecadd43
   languageName: node
   linkType: hard
 
@@ -5367,6 +5395,13 @@ __metadata:
   version: 0.6.1
   resolution: "forever-agent@npm:0.6.1"
   checksum: 766ae6e220f5fe23676bb4c6a99387cec5b7b62ceb99e10923376e27bfea72f3c3aeec2ba5f45f3f7ba65d6616965aa7c20b15002b6860833bb6e394dea546a8
+  languageName: node
+  linkType: hard
+
+"forge-std@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "forge-std@npm:1.1.2"
+  checksum: d5b36b909269a39dd30b619ac09a78e59b1a65e7887872ef99304298c4ffe2aa16f5dc5238c77e481a5e615582191b446401098a2ed567283d7df87e099a9d3c
   languageName: node
   linkType: hard
 
