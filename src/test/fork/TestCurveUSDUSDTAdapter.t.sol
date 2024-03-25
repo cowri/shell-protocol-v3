@@ -8,12 +8,12 @@ import "../../adapters/Curve2PoolAdapter_v2.sol";
 
 contract TestCurveUSDUSDTAdapter is Test {
     Ocean ocean;
-    address wallet = 0x3F06B60ef62378c7C31fd6F448015Ecb83Df214a; // curve usdc whale
-    address secondaryTokenWallet = 0x9b64203878F24eB0CDF55c8c6fA7D08Ba0cF77E5; // usdt whale
+    address wallet = 0x9f1920d0cbB63Ed03376A1e09FD2851D601234C8; // curve usdt whale
+    address secondaryTokenWallet = 0x62383739D68Dd0F844103Db8dFb05a7EdED5BBE6; // usdt whale
     address lpWallet = 0xc877eE5CaB3be87B967C4659e00BE65560f95f39; // lp whale
     Curve2PoolAdapter_v2 adapter;
     address crvUSD = 0x498Bf2B1e120FeD3ad3D42EA2165E9b73f99C1e5;
-    address usdc = 0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9;
+    address usdt = 0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9;
 
     function setUp() public {
         vm.createSelectFork("https://arb1.arbitrum.io/rpc"); // Will start on latest block by default
@@ -33,10 +33,10 @@ contract TestCurveUSDUSDTAdapter is Test {
         if (toggle) {
             user = wallet;
             inputAddress = crvUSD;
-            outputAddress = usdc;
+            outputAddress = usdt;
         } else {
             user = secondaryTokenWallet;
-            inputAddress = usdc;
+            inputAddress = usdt;
             outputAddress = crvUSD;
             multiplier = 1e11;
         }
@@ -94,7 +94,7 @@ contract TestCurveUSDUSDTAdapter is Test {
             inputAddress = crvUSD;
         } else {
             user = secondaryTokenWallet;
-            inputAddress = usdc;
+            inputAddress = usdt;
             multiplier = 1e11;
         }
 
@@ -150,7 +150,7 @@ contract TestCurveUSDUSDTAdapter is Test {
         if (toggle) {
             outputAddress = crvUSD;
         } else {
-            outputAddress = usdc;
+            outputAddress = usdt;
         }
 
         address inputAddress = adapter.primitive();
