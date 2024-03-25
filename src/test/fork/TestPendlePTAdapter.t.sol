@@ -11,8 +11,8 @@ contract TestPendlePTAdapter is Test {
 
     IPendleRouter router = IPendleRouter(0x00000000005BBB0EF59571E58418F9a4357b68A0);
 
-    address wallet = 0xAC638F849A6b8D2734Cd11D1978bb7E9fB7A7fBE;
-    address secondaryTokenWallet = 0x38f046Ae944021351CE5C2486dee3027c949858F;
+    address wallet = 0x970a9D99a5400546fac91a426B46F76b4C6cF74a;
+    address secondaryTokenWallet = 0x0A776ABBAAE0E2161D0E131f57e605EFbEA4b99B;
 
     PendlePTAdapter adapter;
 
