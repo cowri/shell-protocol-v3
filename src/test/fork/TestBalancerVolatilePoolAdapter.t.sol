@@ -9,8 +9,8 @@ import "../../adapters/BalancerAdapter.sol";
 contract TestBalancerVolatilePoolAdapter is Test {
     Ocean ocean;
 
-    address token1Whale = 0x940a7ed683A60220dE573AB702Ec8F789ef0A402;
-    address token2Whale = 0x95e62E8FF84ed8456fDc9739eE4A9597Bb6E4c1f;
+    address token1Whale = 0xC3E5607Cd4ca0D5Fe51e09B60Ed97a0Ae6F874dd;
+    address token2Whale = 0x6115a54940b2Ded07597a89e46E5B92dC546AB14;
     address lpWallet = 0x496b81c49902FBb624024B6f65909bAf861751fB; //bpt whale
     IBalancerVault vault = IBalancerVault(0xBA12222222228d8Ba445958a75a0704d566BF2C8);
     IBalancerQueries query = IBalancerQueries(0xE39B5e3B6D74016b2F6A9673D7d7493B6DF549d5);
