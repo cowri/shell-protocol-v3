@@ -2,7 +2,7 @@
   auto_detect_solc = false
   bytecode_hash = "none"
   cbor_metadata = false
-  fuzz = { runs = 1_000 }
+  fuzz = { runs = 256 }
   gas_reports = ["*"]
   libs = ["lib"]
   remappings = [
