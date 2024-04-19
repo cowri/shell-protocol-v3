@@ -29,8 +29,6 @@ contract TestUniswapV3WETHUSDCEPoolAdapter is Test {
         address user;
         uint256 multiplier = 1;
 
-        toggle = true;
-
         if (toggle) {
             user = wallet;
             inputAddress = weth;

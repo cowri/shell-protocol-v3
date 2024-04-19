@@ -29,8 +29,6 @@ contract TestUniswapV3WETHUSDCEPoolAdapter is Test {
         address outputAddress;
         address user;
 
-        toggle = true;
-
         if (toggle) {
             user = wallet;
             inputAddress = magic;
